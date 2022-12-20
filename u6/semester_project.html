@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="semester_project.js" defer></script>
+
+    <style>
+        /* literally styling this just because */
+
+        @font-face {
+            font-family: axolotl;
+            src: url(Axolotl.ttf);
+        }
+
+        body {
+            background-color: #0D0017;
+            color: #FFF8E4; 
+            font-family: axolotl;
+            font-size: 60px;
+            text-align: center;
+        }
+        
+        textarea {
+            resize: none;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: #0D0017;
+            border: 3px solid #FFF8E4;
+            color: #FFF8E4;
+            font-family: axolotl;
+            font-size: 40px;
+        }
+
+        button:hover {
+            border-color: #b3ad9f;
+            color: #b3ad9f;
+        }
+
+        button:active {
+            background-color: #FFF8E4;
+            border-color: #FFF8E4;
+            color: #0D0017;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quadratic Formula Calculator</h1>
+
+    <textarea id="a" cols="4" rows="1" maxlength="6"></textarea> x<sup>2</sup> +
+    <textarea id="b" cols="4" rows="1" maxlength="6"></textarea> x +
+    <textarea id="c" cols="4" rows="1" maxlength="6"></textarea> = 0 <br>
+    <button id="calculate">Calculate</button> <br> <br> <br>
+    x = <textarea id="x" cols="35" rows="1" readonly></textarea>
+</body>
+</html>
