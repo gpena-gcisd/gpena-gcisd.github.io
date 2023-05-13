@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="final_project.js" defer></script>
+
+    <style>
+        /* literally styling this just because */
+
+        @font-face {
+            font-family: axolotl;
+            src: url(Axolotl.ttf);
+        }
+
+        body {
+            background-color: #170f00;
+            color: #FFF8E4; 
+            font-family: axolotl;
+            font-size: 60px;
+            text-align: center;
+        }
+        
+        textarea {
+            resize: none;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: #170f00;
+            border: 20px solid #FFF8E4;
+            color: #FFF8E4;
+            font-family: axolotl;
+            font-size: 80px;
+            image-rendering: pixelated;
+        }
+
+        button:hover {
+            border-color: #b3ad9f;
+            color: #b3ad9f;
+        }
+
+        button:active {
+            background-color: #FFF8E4;
+            border-color: #FFF8E4;
+            color: #0D0017;
+        }
+
+        p.label {
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickDuck()"><img src="duck.png" alt="Duck!" width="256px" height="256px"></button>
+    
+    <p id="ducks" style="font-size: 200px; margin-top: -50px;"></p>
+
+    <p class="label" style="margin-bottom: -2px;">(i would put the effort to properly implement buttons for generators and upgrades, but I'm tight on time. sorry!)</p>
+</body>
+</html>
